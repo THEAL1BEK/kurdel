@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>YourBrand - Главная</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">THE KURDELI</div>
+        <div class="icons"><span class="icon" id="menu-icon">☰</span></div>
+    </header>
+
+    <section id="banner">
+        <a href="#" id="shop-now-btn">SHOP NOW</a>
+    </section>
+
+    <div id="menu-overlay">
+        <div class="close-btn" id="menu-close"><span>&times;</span></div>
+        <ul>
+            <li id="home">Home</li>
+            <li id="new-in">New In</li>
+            <li id="women">Women</li>
+            <li id="men">Men</li>
+            <li id="winter">Winter</li>
+            <li>Gifts</li>
+            <li id="contact">Contact</li>
+        </ul>
+    </div>
+
+    <div id="filter-overlay">
+        <div class="close-btn" id="filter-close"><span>&times;</span></div>
+        <ul>
+            <li class="filter-option" id="filter-gender">Gender
+                <ul class="filter-suboptions" id="gender-suboptions">
+                    <li id="filter-all">All</li>
+                    <li id="filter-women">Women</li>
+                    <li id="filter-men">Men</li>
+                </ul>
+            </li>
+            <li class="filter-option" id="filter-color">Color</li>
+        </ul>
+    </div>
+
+    <div id="contact-overlay">
+        <div class="close-btn" id="contact-close"><span>&times;</span></div>
+        <ul>
+            <li id="wa-me-chat">wa.me chat</li>
+        </ul>
+    </div>
+
+    <div id="catalog">
+        <div class="filter-sort">
+            <span id="filter-btn">Filter</span>
+            <span id="sort-btn">Sort by</span>
+            <div id="sort-options">
+                <div id="sort-relevance">Relevance</div>
+                <div id="sort-high-to-low">Price: High to Low</div>
+                <div id="sort-low-to-high">Price: Low to High</div>
+            </div>
+        </div>
+        <div class="catalog-grid" id="catalog-grid"></div>
+    </div>
+
+    <div id="product-overlay">
+        <div class="product-images" id="image-container"></div>
+        <div class="product-details">
+            <div class="product-title" id="product-title"></div>
+            <div class="product-price" id="product-price"></div>
+        </div>
+        <div class="product-actions">
+            <button class="order-btn" id="order-btn">Заказать</button>
+            <button class="back-btn" id="back-btn">Back</button>
+        </div>
+    </div>
+
+    <script src="products.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
